@@ -27,5 +27,11 @@
 }
 
 - (IBAction)btnTapped:(id)sender {
+    if ([_testLabel.text isEqualToString:@"Hello"]) {
+        _testLabel.text = @"Bye";
+    }
+    else{
+        _testLabel.text = @"Hello";
+    }
 }
 @end
